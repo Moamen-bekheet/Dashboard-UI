@@ -348,11 +348,12 @@ body{
 .container{
     height: 100vh;
     display:grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
 }
 .side-bar{
     grid-row: 1/4;
-    background-color: #3b82f6;
+    background: linear-gradient(.5turn,#1e40af 25%,#3b82f6);
     padding-left: 1rem;
     padding-top: 1rem;
     display: grid;
@@ -386,4 +387,44 @@ ul{
     gap: 1rem;
     color: white;
     font-weight: bold;
+}
+label>svg, .notification>svg, .notification>span, .notification>img{
+    fill:gray;
+    vertical-align: middle;
+}
+
+.header{
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 2px .3rem 5px gray;
+}
+.greeting{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem
+}
+.header-buttons{
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+}
+.notification{
+    justify-self: end;
+}
+input{
+    width: 80%;
+    border-radius: 1rem;
+    background-color: #dbeafe;
+}
+button{
+    border-radius: 1rem;
+    padding: 5px 1rem;
+    color:white;
+    background-color: #3b82f6;
+    border:0;
 }
