@@ -410,7 +410,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
     column-gap: .5rem;
     background-color: white;
 }
-.greeting{
+.greeting, .trending-item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
