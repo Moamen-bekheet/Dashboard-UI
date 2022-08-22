@@ -379,6 +379,9 @@ svg{
     fill:white;
     vertical-align:sub;
 }
+.project-card svg{
+    fill: gray;
+}
 svg+span{
     margin-left: 1.3rem;
 }
@@ -481,12 +484,24 @@ button{
     border-left: .5rem solid #fcd34d;
     height: 200px;
     border-radius: .3rem;
-    padding-left: 1rem;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-icons{
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem
 }
 a{
     text-decoration: none;
     color:#448;
 }
+ul a{
+    color: white;
+}
+
 @media (max-width: 500px){
     svg+span{
         display: none;
