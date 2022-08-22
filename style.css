@@ -344,7 +344,8 @@ display: none;
 }
 /* end of CSS normalize + beginning of my design */
 body{
-    min-height: 100vh;}
+    min-height: 100vh;
+    background-color: #e2e8f0;}
 .container{
     height: 100vh;
     display:grid;
@@ -404,6 +405,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
     box-shadow: 2px .3rem 5px gray;
     row-gap: 2rem;
     column-gap: .5rem;
+    background-color: white;
 }
 .greeting{
     display: flex;
@@ -441,12 +443,29 @@ button{
     display:grid;
     grid-template-columns: 1fr 12rem;
     gap: 1rem;
+    padding:1rem;
 }
-.projects, .announcements{
+.projects, .announcements, .announcement-items, .trending-items{
     display:grid;
-    grid-template-rows: max-content 1fr;
     gap: 1rem;
-    padding: 1rem
+}
+.projects, .announcement-items, .trending-items{
+    grid-template-rows: max-content 1fr;
+}
+.announcement-items-container, .trending-items-container{
+    padding:1.5rem;
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, min(5rem,1fr));
+}
+/* .announcement-items-container:nth-child(2)>div:nth-child(2){
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+} */
+.announcements{
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
 }
 .completed-projects{
     display:grid;
@@ -455,7 +474,11 @@ button{
 }
 .completed-projects div{
     background-color: white;
-    border-left: 3px solid #fcd34d;
+    border-left: .5rem solid #fcd34d;
     height: 200px;
     border-radius: .3rem;
+}
+a{
+    text-decoration: none;
+    color:#448;
 }
