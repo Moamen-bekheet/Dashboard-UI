@@ -435,4 +435,27 @@ button{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: max-content 1fr;
+    gap: 2rem;
+}
+.body{
+    display:grid;
+    grid-template-columns: 1fr 12rem;
+    gap: 1rem;
+}
+.projects, .announcements{
+    display:grid;
+    grid-template-rows: max-content 1fr;
+    gap: 1rem;
+    padding: 1rem
+}
+.completed-projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+.completed-projects div{
+    background-color: white;
+    border-left: 3px solid #fcd34d;
+    height: 200px;
+    border-radius: .3rem;
 }
