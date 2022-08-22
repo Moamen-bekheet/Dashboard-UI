@@ -348,11 +348,12 @@ body{
 .container{
     height: 100vh;
     display:grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: max-content 1fr;
     gap: 1rem;
+    column-gap: 0;
 }
 .side-bar{
-    grid-row: 1/4;
+    grid-row: 1/2;
     background: linear-gradient(.5turn,#1e40af 25%,#3b82f6);
     padding-left: 1rem;
     padding-top: 1rem;
@@ -367,6 +368,7 @@ body{
     font-weight: bold;
     color:white;
     margin-left: 1rem;
+    margin-right: 1rem
 }
 .logo svg{
     width: 2rem;
@@ -394,13 +396,14 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 }
 
 .header{
-    grid-column: 2/8;
+    height: max-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     box-shadow: 2px .3rem 5px gray;
+    row-gap: 2rem;
+    column-gap: .5rem;
 }
 .greeting{
     display: flex;
@@ -427,4 +430,9 @@ button{
     color:white;
     background-color: #3b82f6;
     border:0;
+}
+.website-meat{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: max-content 1fr;
 }
