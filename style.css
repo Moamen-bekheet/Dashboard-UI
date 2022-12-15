@@ -428,7 +428,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 }
 .notification{
     justify-self: end;
-    width: 32px;
+    height: 32px;
     display flex
     align-items: flex-start;
 }
