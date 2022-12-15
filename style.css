@@ -424,7 +424,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 .header-buttons{
     display: flex;
     gap: .5rem;
-    align-self: flex-end;
+    justify-content: flex-end;
 }
 .notification{
     justify-self: end;
