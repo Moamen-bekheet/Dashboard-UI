@@ -429,7 +429,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 .notification{
     justify-self: end;
     height: 32px;
-    display flex
+    display: flex;
     align-items: flex-start;
 }
 input{
