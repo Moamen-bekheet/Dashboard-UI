@@ -353,6 +353,10 @@ body{
     gap: 1rem;
     column-gap: 0;
 }
+img[src="./gamer (1).png"]{
+    width: 32px;
+    height: 32px;
+}
 .side-bar{
     grid-row: 1/2;
     background: linear-gradient(.5turn,#1e40af 25%,#3b82f6);
@@ -400,13 +404,14 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 }
 
 .header{
+    align-items: start;
     height: max-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 1rem;
     box-shadow: 2px .1rem 5px gray;
-    row-gap: 2rem;
+    row-gap: 0;
     column-gap: .5rem;
     background-color: white;
 }
@@ -419,10 +424,11 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 .header-buttons{
     display: flex;
     gap: .5rem;
-    justify-content: flex-end;
+    align-self: center;
 }
 .notification{
     justify-self: end;
+    width: 32px;
 }
 input{
     width: 80%;
