@@ -408,10 +408,10 @@ label>svg, .notification>svg, .notification>span, .notification>img{
     height: max-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
+    align-items: start;
     padding: 1rem;
     box-shadow: 2px .1rem 5px gray;
-    row-gap: 0;
+    row-gap: 3rem;
     column-gap: .5rem;
     background-color: white;
 }
@@ -424,7 +424,7 @@ label>svg, .notification>svg, .notification>span, .notification>img{
 .header-buttons{
     display: flex;
     gap: .5rem;
-    align-self: center;
+    align-self: flex-end;
 }
 .notification{
     justify-self: end;
